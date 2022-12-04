@@ -9,7 +9,9 @@ const [input, setInput] = useState('')
 const [busquedas, setBusquedas] = useState([])
 
 useEffect(() => {
-  busquedas.forEach(b=>{
+
+  setTimeout(() => {
+      busquedas.forEach(b=>{
     if( !isNaN(Number(b))){console.log(b, 'en onclick foreach')
     setDisplayed(arrayProductos.filter(p=>{if(p.code.toString().includes(b))return p }))
   
@@ -18,6 +20,8 @@ useEffect(() => {
   
   }})
   if(!busquedas.length)setDisplayed(arrayProductos)
+  }, 3000);
+
 }, [busquedas])
 
 
