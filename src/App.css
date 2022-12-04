@@ -1,0 +1,140 @@
+.App{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin: 3rem;
+background-color: rgb(245, 245, 245);
+padding: 2rem;
+}
+
+.searchBar{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 80%;
+  height: 3rem;
+  margin-bottom: 1rem;  
+  border-radius: 20px;
+
+}
+
+.input{
+  display: flex;
+  flex: 12 ;
+  padding: 10;
+  padding-left: 10px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border: 1px solid rgb(196, 196, 196);
+  font-size: large;
+}
+
+.input, .button{
+  height: 100%;
+  width: 100%;
+}
+.button{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 98%;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0.1rem;
+  background: rgb(52, 52, 52);
+  color: white;
+  cursor: pointer;
+}
+
+.button img {
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  margin-left: 0.3rem;
+}
+
+.busquedasContainer{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  flex-direction: row;
+  width: 80%;
+  height: 3rem;
+  margin-bottom: 1rem;  
+}
+
+.busquedas{
+  display: flex;
+  background: rgb(52, 52, 52);
+  color: white;
+  padding: 0.3rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.busquedas button {
+  margin-left: 0.3rem;
+  border: none;
+  color: white;
+  background-color: rgb(52, 52, 52);
+}
+.cardsContainer{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80vh;
+  margin-bottom: rem;  
+  flex-wrap: wrap;
+  
+}
+
+.productCard{
+  display: flex;
+  width: 40%;
+  margin: 1rem;
+  flex-direction: row;
+}
+.img{
+  margin-right: 1rem;
+}
+.img img{
+  box-shadow: 0 0 7px 0 rgb(164, 164, 164);
+  border-radius: 10px;
+}
+.text{
+  flex-direction: column;
+  display: flex;
+}
+
+.text span{
+  color: gray;
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+.number{
+  color: black !important;
+  font-weight: bold;
+}
+
+.divisor{
+  height: 2px;
+  background: rgb(199, 199, 199);
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
+.resultados{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  flex-direction: row;
+  width: 80%;
+  color: rgb(138, 138, 138);
+}
